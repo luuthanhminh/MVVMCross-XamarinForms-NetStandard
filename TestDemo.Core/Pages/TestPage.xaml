@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<views:MvxContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="TestDemo.Core.Pages.TestPage"
+             x:TypeArguments="viewModels:TestViewModel"
+             xmlns:views="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
+             xmlns:viewModels="clr-namespace:TestDemo.Core.ViewModels;assembly=TestDemo.Core"
+              Title="Test">
+    <ContentPage.Content>
+        <Grid BackgroundColor="Red">
+            <Button Text="Test Page" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" Command="{Binding NavigateToMainPageCommand}"/>
+        </Grid>
+    </ContentPage.Content>
+</views:MvxContentPage>
